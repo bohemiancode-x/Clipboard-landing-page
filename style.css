@@ -1,0 +1,428 @@
+:root {
+    /* Primary colors */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* Neutral colors */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    font-size: 18px;
+}
+
+.home-page {
+    height: 100vh;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page figure {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 70px;
+    height: 20vh;
+
+}
+
+.home-page figure img {
+    width: 150px;
+}
+
+.home-page h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.home-page p {
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+    opacity: 70%;
+    font-size: 18px;
+}
+
+.home-page .buttons {
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.buttons .ios-button {
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--Strong-Cyan);
+    border: 2px solid var(--Strong-Cyan);
+    font-size: 20px;
+    box-shadow: 0px 0px 5px var(--Strong-Cyan);
+}
+
+.buttons .mac-button {
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--Light-Blue);
+    border: 2px solid var(--Light-Blue);
+    font-size: 20px;
+    box-shadow: 0px 0px 5px var(--Light-Blue);
+}
+
+.second-page {
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* gap: 30px; */
+}
+
+.second-page h1 {
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.second-page p {
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+    opacity: 50%;
+}
+
+.second-page .mac-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.second-page figure img {
+    width: 300px;
+}
+
+.second-page .info {
+    padding: 5px 0%;
+}
+
+.second-page .icons img {
+    height: 40px;
+    width: 50px;
+}
+
+.second-page .icon-info figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.second-page .icon-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+.second-page .icon-info h1 {
+    font-size: 20px;
+}
+
+.second-page .icon-info p {
+    font-size: 16px;
+    padding: 0px;
+}
+
+.third-page {
+    margin-top: 30px;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.third-page .socials-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.third-page .socials-icons figure {
+    gap: 25px;
+    margin: 20px;
+}
+
+.third-page .socials-icons figure img {
+    width: 125px;
+}
+
+.third-page h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.third-page p {
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+    opacity: 70%;
+    font-size: 18px;
+}
+
+.third-page .buttons {
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.third-page .buttons .ios-button {
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--Strong-Cyan);
+    border: 2px solid var(--Strong-Cyan);
+    font-size: 20px;
+    box-shadow: 0px 0px 5px var(--Strong-Cyan);
+}
+
+.third-page .buttons .mac-button {
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--Light-Blue);
+    border: 2px solid var(--Light-Blue);
+    font-size: 20px;
+    box-shadow: 0px 0px 5px var(--Light-Blue);
+}
+
+footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(241, 240, 240);
+}
+
+footer .logo {
+    margin-top: 50px;
+}
+
+footer .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+footer ul {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer ul li {
+    color: var(--Dark-Grayish-Blue);
+    text-align: center;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    color: var(--Strong-Cyan);
+}
+
+footer .social-icons {
+    cursor: pointer;
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Making all these responsive on larger screens */
+@media screen and (min-width: 1220px) {
+    section{
+        /* border: 2px solid red; */
+    }
+
+    footer {
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        height: 20vh;
+        gap: 30px;
+    }
+
+    footer .logo {
+        margin: 100px;
+    }
+
+    footer ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        margin-left: 20%;
+    }
+
+    footer ul li {
+        text-align: center;
+    }
+
+    footer .social-icons {
+        display: flex;
+        margin-left: 25%;
+    }
+
+    .home-page {
+        height: 60vh;
+        background-image: url(./images/bg-header-desktop.png);
+        padding: 20px;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .home-page figure {
+        margin-top: -50px;
+    }
+
+    .home-page h1 {
+
+        font-size: 45px;
+    }
+
+    .home-page p {
+        font-size: 20px;
+        padding: 0 250px;
+    }
+
+    .home-page .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-page .buttons button {
+        width: 300px;
+    }
+
+    .second-page {
+        border: 2px solid red;
+        height: 200vh;
+        display: flex;   
+    }
+
+    .second-page #info-one h1 {
+        font-size: 35px;
+    }
+
+    .second-page #info-one p {
+        padding: 0 200px;
+        font-size: 20px;
+    }
+
+    .second-page #mac-pic {
+        margin-left: -5%;
+    }
+
+    .second-page #mac-pic img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .second-page .mac-info {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .second-page .mac-info .side-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        /* align-items: center; */
+    }
+
+    .second-page .mac-info .side-info .info h1 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .second-page .mac-info .side-info .info p {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .second-page #devices-pic img {
+        height: 35vh;
+        width: 600px;
+    }
+
+    .second-page .bottom-info {
+        display: flex;
+        margin: 30px;
+    }
+
+    .third-page {
+        border: 2px solid green;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .third-page .socials-icons {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    .third-page p {
+        width: 60%;
+    }
+
+    .third-page .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-page .buttons button {
+        width: 300px;
+    }
+
+
+}
+
+
